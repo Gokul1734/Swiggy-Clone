@@ -1,0 +1,375 @@
+* {
+  letter-spacing: 0.5px;
+}
+
+#swiggy img {
+  position: absolute;
+  width: auto;
+  padding-right: 40px;
+  height: 45px;
+  padding-bottom: 45px;
+  padding-top: 15px;
+  top: 0px;
+}
+
+.location {
+  position: absolute;
+  color: #3d4152;
+  text-decoration: none;
+  font-size: larger;
+  padding-left: 10px;
+  border-left-width: 100px;
+  margin-left: 100px;
+  margin-top: -6px;
+}
+
+.head {
+  z-index: 2;
+  display: block;
+  position: fixed;
+  background-color: white;
+  opacity: 1;
+  width: 100%;
+  height: 80px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 1px 10px;
+}
+
+body {
+  font-family: "microsoft new tai lue";
+  font-weight: 500;
+  margin: 0px;
+  padding: 0px;
+}
+
+.head a {
+  position: fixed;
+  height: 100px;
+  width: 300px;
+  padding-top: 30px;
+  padding-left: 40px;
+}
+
+.head a img {
+  padding-top: 20px;
+  padding-left: 0;
+  height: 20px;
+  width: 20px;
+}
+
+.menu {
+  position: relative;
+  width: 700px;
+  align-items: flex-end;
+  justify-content: space-around;
+  list-style-type: none;
+  float: right;
+  display: flex;
+  text-align: left;
+  font-weight: 700;
+  font-size: medium;
+  margin-top: 0px;
+  padding-right: 10px;
+  margin-left: 500px;
+  padding-right: 60px;
+}
+
+.menu a {
+  font-size: 15px;
+  margin-right: -20px;
+  font-weight: 800;
+  padding: 10px;
+  padding-top: 30px;
+  height: auto;
+  width: auto;
+  color: #3d4152;
+  text-decoration: none;
+  border: none;
+  background: none;
+}
+
+.menu button {
+  font-size: 15px;
+  margin-right: -20px;
+  font-weight: 800;
+  padding: 10px;
+  padding-top: 30px;
+  height: auto;
+  width: auto;
+  color: #3d4152;
+  text-decoration: none;
+  border: none;
+  background: none;
+}
+
+.location::after {
+  content: "";
+  position: absolute;
+  left: 9px;
+  bottom: -3px;
+  height: 3px;
+  width: 28%;
+  background: #3d4152;
+  border-radius: 40px;
+}
+
+.location:hover::after {
+  background: #ea7327;
+}
+
+ul li img {
+  width: 10px;
+}
+
+.head a:hover {
+  color: #ea7327;
+}
+.head button:hover {
+  color: #ea7327;
+}
+
+#swiggy img:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+  transform-origin: center;
+}
+
+.location {
+  border: none;
+  background: none;
+  top: 30px;
+}
+
+.location a:hover {
+  color: #ea7327;
+}
+
+.ad {
+  position: relative;
+  background-color: #171a29;
+  height: 365px;
+  width: auto;
+  top: 80px;
+}
+
+.ad ul {
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  list-style-type: none;
+  display: flex;
+}
+
+.ad ul::-webkit-scrollbar {
+  display: none;
+}
+
+.ad ul li a img {
+  height: 250px;
+  width: 250px;
+  margin: 30px;
+  overflow-x: auto;
+}
+
+.ad ul li a img:hover {
+  transform: scale(1.08);
+  transition: 1s;
+}
+
+.ad {
+  overflow-x: auto;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+  box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0);
+  -webkit-overflow-scrolling: touch;
+}
+
+.fwd {
+  z-index: 1;
+  position: absolute;
+  border-radius: 100%;
+  height: 50px;
+  width: 50px;
+  margin-top: 130px;
+  right: 50px;
+}
+
+.bwd {
+  z-index: 1;
+  position: absolute;
+  border-radius: 100%;
+  height: 50px;
+  width: 50px;
+  margin-top: 130px;
+}
+
+.filter-tag {
+  padding-top: 50px;
+  margin-top: 60px;
+}
+
+.num {
+  font-size: 30px;
+  margin-left: 30px;
+  font-style: bold;
+}
+
+.filter-tag button {
+  position: relative;
+  color: #8b8d97;
+  text-decoration: none;
+  margin: 0 20px;
+  margin-right: 30px;
+  float: right;
+  background-color: #ffff;
+  border: none;
+  top: 10px;
+  font-size: medium;
+  letter-spacing: 0.5px;
+}
+
+.filter-tag button::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -19px;
+  height: 3px;
+  width: 100%;
+  background: #e9e9eb;
+  border-radius: 40px;
+}
+
+.filter-tag button:focus {
+  color: #3d4152;
+  transition: 1s;
+}
+
+.filter-tag button:hover {
+  color: #3d4152;
+  transition: 1s;
+}
+
+.filter-tag button:focus::after {
+  background: #3d4152;
+  transition: 1s;
+}
+
+#filt {
+  color: #ea7327;
+}
+
+.filtere:hover {
+  color: #ea7327 !important;
+}
+
+.filtere:hover:focus {
+  display: none !important;
+}
+
+hr {
+  height: 2px;
+  background-color: #e9e9eb;
+  border: none;
+}
+
+.hotels {
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: 300px 300px 300px 300px 300px;
+  background-color: #ffffff;
+  padding: 10px;
+  row-gap: 40px;
+}
+
+.k {
+  display: grid;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: left;
+  height: 251px;
+  padding-bottom: 57px;
+}
+
+.k:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 1px 5px;
+}
+
+.hotels img {
+  z-index: 3;
+  background: #eef0f5;
+  width: 254px;
+  height: 160px;
+}
+
+.hotels p {
+  font-size: 20px;
+  width: max-content;
+  color: #282c3f;
+  border: none;
+  text-decoration: none;
+  margin-top: 1px;
+}
+
+.hotels span {
+  position: relative;
+  color: #686b80;
+  width: max-content;
+  font-size: 12px;
+  bottom: 38px;
+}
+
+.hotels :link {
+  text-decoration: none;
+}
+
+.footer {
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+  width: 260px;
+  color: #5e7ab5;
+  margin-top: -30px;
+}
+
+.rate {
+  color: white;
+  background-color: #5fc579;
+  padding-top: 3px;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.rate i {
+  padding-right: 4px;
+}
+
+.quick-view {
+  position: absolute;
+  margin-top: 50px;
+  margin-left: 100px;
+  color: #5d8ed5;
+  display: none;
+}
+
+.quick-view:hover {
+  color: #686b78;
+}
+
+.hotels :hover .quick-view {
+  display: block;
+}
+
+.hotels :hover .line {
+  display: block;
+}
+
+.line {
+  margin-top: 34px;
+  position: absolute;
+  color: 1px solid #171a29;
+  width: 250px;
+  display: none;
+}

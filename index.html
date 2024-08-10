@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Swiggy</title>
+    <link rel="stylesheet" href="/public/design.css" />
+    
+    <script
+      src="https://kit.fontawesome.com/51e36cf0d5.js"
+      crossorigin="anonymous"
+    ></script>
+    
+  </head>
+  <body>
+    <div class="head">
+      <a id="swiggy" href="/"><img src="public\header\swiggy.png" alt="" /></a>
+      <button class="location" onclick="handleClick()">
+        <span class="other">other</span>
+        <span style="color: #686b78"> &nbsp location ⮟</span>
+      </button>
+
+      <ul class="menu">
+        <li>
+          <a href="/search"><i class="fa-solid fa-magnifying-glass"></i> Search</a>
+        </li>
+        <li>
+          <a href=""><i class="fa-solid fa-tags"></i> Offers</a>
+        </li>
+        <li>
+          <a href=""><i class="fa-solid fa-circle-info"></i> Help</a>
+        </li>
+        <li>
+          <a href=""><i class="fa-solid fa-user"></i> SignIn</a>
+        </li>
+        <li>
+          <a href=""><i class="fa-solid fa-cart-shopping"></i> Cart</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="ad">
+      <ul>
+        <li>
+          <button type="button" class="bwd">
+            <i class="fa-solid fa-arrow-left"></i>
+          </button>
+          <a href=""><img src="./public/div1/ad1.png" alt="" /></a>
+          <a href=""><img src="./public/div1/ad2.png" alt="" /></a>
+          <a href=""><img src="./public/div1/ad3.png" alt="" /></a>
+          <a href=""><img src="./public/div1/ad4.png" alt="" /></a>
+          <button type="button" class="fwd">
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+          <a href=""><img src="./public/div1/ad1.png" alt="" /></a>
+          <a href=""><img src="./public/div1/ad2.png" alt="" /></a>
+          <a href=""><img src="./public/div1/ad3.png" alt="" /></a>
+          <a href=""><img src="./public/div1/ad4.png" alt="" /></a>
+        </li>
+      </ul>
+    </div>
+
+    <nav class="filter-tag">
+      <span class="num">20 restaurants</span>
+      <button class="filtere">Filters   <i id="filt" class="fa-solid fa-sliders"></i></button>
+      <button>Cost:High to Low</button>
+      <button>Cost:Low to High</button>
+      <button>Rating</button>
+      <button>Delivery Time</button>
+      <button>Relevance</button>
+    </nav>
+    <hr />
+
+    <div class="hotels">
+     <div class="k" id="h1"><a href="">
+      <img src="public\hotels\1.png">
+      <p class="title" >SS Hydrabad Biriyani</p>
+      <span>Biriyani, North Indian, Chinese</span>
+      <div class="footer">
+       <div class="rate"><i class="fa-solid fa-star" style="color: #ffffff;"></i><small class="r">5.0</small></div>
+       <i>∙</i>
+       <div class="time"><small class="t">45</small><i style="font-style: normal;"> MINS</i></div>
+       <i>∙</i>
+       <div class="expense">₹<small class="ex">300</small> FOR TWO</div>>
+       <hr class="line">
+       <b href=""  class="quick-view">QUICK VIEW</b>
+      </div>
+     </a></div>
+     <div class="k" id="h2"><a href="">
+      <img src="./public/hotels/2.png">
+      <p class="title" >Salem RR Biriyani</p>
+      <span>Biriyani, Chettinad, Tandoori</span>
+      <div class="footer">
+       <div class="rate"><i class="fa-solid fa-star" style="color: #ffffff;"></i><small class="r">5.0</small></div>
+       <i>∙</i>
+       <div class="time"><small class="t">45</small><i style="font-style: normal;"> MINS</i></div>
+       <i>∙</i>
+       <div class="expense">₹<small class="ex">300</small> FOR TWO</div>
+       <hr class="line">
+       <b href=""  class="quick-view">QUICK VIEW</b>
+      </div>
+     </a></div>
+     <div class="k" id="h3"><a href="">
+      <img src="./public/hotels/3.png">
+      <p class="title" >Punjabi Dhabba Express</p>
+      <span>Biriyani, North Indian, Tandoori</span>
+      <div class="footer">
+       <div class="rate"><i class="fa-solid fa-star" style="color: #ffffff;"></i><small class="r">5.0</small></div>
+       <i>∙</i>
+       <div class="time"><small class="t">45</small><i style="font-style: normal;"> MINS</i></div>
+       <i>∙</i>
+       <div class="expense">₹<small class="ex">300</small> FOR TWO</div>
+       <hr class="line">
+       <b href=""  class="quick-view">QUICK VIEW</b>
+      </div>
+     </a></div>
+     <div class="k" id="h4"><a href=""><img src="./public/hotels/4.png"><p class="title" >Buhari</p>
+      <span>Biriyani, Chettinad, BBQ</span>
+      <div class="footer">
+       <div class="rate"><i class="fa-solid fa-star" style="color: #ffffff;"></i><small class="r">5.0</small></div>
+       <i>∙</i>
+       <div class="time"><small class="t">45</small><i style="font-style: normal;"> MINS</i></div>
+       <i>∙</i>
+       <div class="expense">₹<small class="ex">300</small> FOR TWO</div>
+       <hr class="line">
+       <b href=""  class="quick-view">QUICK VIEW</b>
+      </div></a></div> 
+     <div class="k" id="h5"><a href=""><img src="./public/hotels/5.png"><p class="title" >Oven Story</p>
+      <span>Pizza, Taco, Burgers</span>
+      <div class="footer">
+       <div class="rate"><i class="fa-solid fa-star" style="color: #ffffff;"></i><small class="r">5.0</small></div>
+       <i>∙</i>
+       <div class="time"><small class="t">45</small><i style="font-style: normal;"> MINS</i></div>
+       <i>∙</i>
+       <div class="expense">₹<small class="ex">300</small> FOR TWO</div>
+       <hr class="line">
+       <b href=""  class="quick-view">QUICK VIEW</b>
+      </div></a></div>
+     <div class="k" id="h6"><a href=""><img src="./public/hotels/6.png"><p class="title" >KFC</p>
+      <span>Chicken, Fries, Mojitos</span>
+      <div class="footer">
+       <div class="rate"><i class="fa-solid fa-star" style="color: #ffffff;"></i><small class="r">5.0</small></div>
+       <i>∙</i>
+       <div class="time"><small class="t">45</small><i style="font-style: normal;"> MINS</i></div>
+       <i>∙</i>
+       <div class="expense">₹<small class="ex">300</small> FOR TWO</div>
+       <hr class="line">
+       <b href=""  class="quick-view">QUICK VIEW</b>
+      </div></a></div>
+     <div class="k" id="h7"><a href=""><img src="./public/hotels/7.png"><p class="title" >Mc Donalds</p>
+      <span>Burgers, Fries, Drinks</span>
+      <div class="footer">
+       <div class="rate"><i class="fa-solid fa-star" style="color: #ffffff;"></i><small class="r">5.0</small></div>
+       <i>∙</i>
+       <div class="time"><small class="t">45</small><i style="font-style: normal;"> MINS</i></div>
+       <i>∙</i>
+       <div class="expense">₹<small class="ex">300</small> FOR TWO</div>
+       <hr class="line">
+       <b href=""  class="quick-view">QUICK VIEW</b>
+      </div></a></div>
+     <div class="k" id="h8"><a href=""><img src="./public/hotels/8.png"><p class="title" >Erode Amman Mess</p>
+      <span>Biriyani, Chettinad, Chicken</span>
+      <div class="footer">
+       <div class="rate"><i class="fa-solid fa-star" style="color: #ffffff;"></i><small class="r">5.0</small></div>
+       <i>∙</i>
+       <div class="time"><small class="t">45</small><i style="font-style: normal;"> MINS</i></div>
+       <i>∙</i>
+       <div class="expense">₹<small class="ex">300</small> FOR TWO</div>
+       <hr class="line">
+       <b href=""  class="quick-view">QUICK VIEW</b>
+      </div></a></div>
+     <div class="k" id="h9"><a href=""><img src="./public/hotels/9.png"><p class="title" >Ponnusamy ./public/Hotel</p>
+      <span>Biriyani, Chettinad, Tandoori</span>
+      <div class="footer">
+       <div class="rate"><i class="fa-solid fa-star" style="color: #ffffff;"></i><small class="r">5.0</small></div>
+       <i>∙</i>
+       <div class="time"><small class="t">45</small><i style="font-style: normal;"> MINS</i></div>
+       <i>∙</i>
+       <div class="expense">₹<small class="ex">300</small> FOR TWO</div>
+       <hr class="line">
+       <b href=""  class="quick-view">QUICK VIEW</b>
+      </div></a></div>
+     <div class="k" id="h10"><a href=""><img src="./public/hotels/10.png"><p class="title" >Palmshore</p>
+      <span>Biriyani, Fish, BBQ</span>
+      <div class="footer">
+       <div class="rate"><i class="fa-solid fa-star" style="color: #ffffff;"></i><small class="r">5.0</small></div>
+       <i>∙</i>
+       <div class="time"><small class="t">45</small><i style="font-style: normal;"> MINS</i></div>
+       <i>∙</i>
+       <div class="expense">₹<small class="ex">300</small> FOR TWO</div>
+       <hr class="line">
+       <b href=""  class="quick-view">QUICK VIEW</b>
+      </div></a></div>
+     <div class="k" id="h11"><a href=""><img src="./public/hotels/11.png"><p class="title" >Dil Se Rasoi</p>
+      <span>Pasta, Noodles, Friedrice</span>
+      <div class="footer">
+       <div class="rate"><i class="fa-solid fa-star" style="color: #ffffff;"></i><small class="r">5.0</small></div>
+       <i>∙</i>
+       <div class="time"><small class="t">45</small><i style="font-style: normal;"> MINS</i></div>
+       <i>∙</i>
+       <div class="expense">₹<small class="ex">300</small> FOR TWO</div>
+       <hr class="line">
+       <b href=""  class="quick-view">QUICK VIEW</b>
+      </div></a></div>
+     <div class="k" id="h12"><a href=""><img src="./public/hotels/12.png"><p class="title" >Arabian Knights</p>
+      <span>BBQ, Shawarma, Biriyani</span>
+      <div class="footer">
+       <div class="rate"><i class="fa-solid fa-star" style="color: #ffffff;"></i><small class="r">5.0</small></div>
+       <i>∙</i>
+       <div class="time"><small class="t">45</small><i style="font-style: normal;"> MINS</i></div>
+       <i>∙</i>
+       <div class="expense">₹<small class="ex">300</small> FOR TWO</div>
+       <hr class="line">
+       <b href=""  class="quick-view">QUICK VIEW</b>
+      </div></a></div>
+     <div class="k" id="h13"><a href=""><img src="./public/hotels/13.png"><p class="title" >Dominos</p>
+      <span>Pizza, Mojitos, Fires</span>
+      <div class="footer">
+       <div class="rate"><i class="fa-solid fa-star" style="color: #ffffff;"></i><small class="r">5.0</small></div>
+       <i>∙</i>
+       <div class="time"><small class="t">45</small><i style="font-style: normal;"> MINS</i></div>
+       <i>∙</i>
+       <div class="expense">₹<small class="ex">300</small> FOR TWO</div>
+       <hr class="line">
+       <b href=""  class="quick-view">QUICK VIEW</b>
+      </div></a></div>
+     <div class="k" id="h14"><a href=""><img src="./public/hotels/14.png"><p class="title" >Sea Shells</p>
+      <span>Fish, Biriyani, BBQ</span>
+      <div class="footer">
+       <div class="rate"><i class="fa-solid fa-star" style="color: #ffffff;"></i><small class="r">5.0</small></div>
+       <i>∙</i>
+       <div class="time"><small class="t">45</small><i style="font-style: normal;"> MINS</i></div>
+       <i>∙</i>
+       <div class="expense">₹<small class="ex">300</small> FOR TWO</div>
+       <hr class="line">
+       <b href=""  class="quick-view">QUICK VIEW</b>
+      </div></a></div>
+     <div class="k" id="h15"><a href=""><img src="./public/hotels/15.png"><p class="title" >Anjappar</p>
+      <span>Biriyani, Chettinad, BBQ</span>
+      <div class="footer">
+       <div class="rate"><i class="fa-solid fa-star" style="color: #ffffff;"></i><small class="r">5.0</small></div>
+       <i>∙</i>
+       <div class="time"><small class="t">45</small><i style="font-style: normal;"> MINS</i></div>
+       <i>∙</i>
+       <div class="expense">₹<small class="ex">300</small> FOR TWO</div>
+       <hr class="line">
+       <b href=""  class="quick-view">QUICK VIEW</b>
+      </div></a></div>
+     <div class="k" id="h16"><a href=""><img src="./public/hotels/16.png"><p class="title" >Samco</p>
+      <span>Biriyani, North Indian, Tandoori</span>
+      <div class="footer">
+       <div class="rate"><i class="fa-solid fa-star" style="color: #ffffff;"></i><small class="r">5.0</small></div>
+       <i>∙</i>
+       <div class="time"><small class="t">45</small><i style="font-style: normal;"> MINS</i></div>
+       <i>∙</i>
+       <div class="expense">₹<small class="ex">300</small> FOR TWO</div>
+       <hr class="line">
+       <b href=""  class="quick-view">QUICK VIEW</b>
+      </div></a></div>
+     <div class="k" id="h17"><a href=""><img src="./public/hotels/17.png"><p class="title" >Khalids Biriyani</p>
+      <span>Biriyani, Roti, Tandoori</span>
+      <div class="footer">
+       <div class="rate"><i class="fa-solid fa-star" style="color: #ffffff;"></i><small class="r">5.0</small></div>
+       <i>∙</i>
+       <div class="time"><small class="t">45</small><i style="font-style: normal;"> MINS</i></div>
+       <i>∙</i>
+       <div class="expense">₹<small class="ex">300</small> FOR TWO</div>
+       <hr class="line">
+       <b href=""  class="quick-view">QUICK VIEW</b>
+      </div></a></div>
+     <div class="k" id="h18"><a href=""><img src="./public/hotels/18.png"><p class="title" >Hotel Cresent</p>
+      <span>Biriyani, Beaf, Pudding</span>
+      <div class="footer">
+       <div class="rate"><i class="fa-solid fa-star" style="color: #ffffff;"></i><small class="r">5.0</small></div>
+       <i>∙</i>
+       <div class="time"><small class="t">45</small><i style="font-style: normal;"> MINS</i></div>
+       <i>∙</i>
+       <div class="expense">₹<small class="ex">300</small> FOR TWO</div>
+       <hr class="line">
+       <b href=""  class="quick-view">QUICK VIEW</b>
+      </div></a></div>
+     <div class="k" id="h19"><a href=""><img src="./public/hotels/19.png"><p class="title" >Coutrallam Parotta</p>
+      <span>Parotta, Chettinad, BBQ</span>
+      <div class="footer">
+       <div class="rate"><i class="fa-solid fa-star" style="color: #ffffff;"></i><small class="r">5.0</small></div>
+       <i>∙</i>
+       <div class="time"><small class="t">45</small><i style="font-style: normal;"> MINS</i></div>
+       <i>∙</i>
+       <div class="expense">₹<small class="ex">300</small> FOR TWO</div>
+       <hr class="line">
+       <b href=""  class="quick-view">QUICK VIEW</b>
+      </div></a></div>
+     <div class="k" id="h20"><a href=""><img src="./public/hotels/20.png"><p class="title" >Zaitoon</p>
+      <span>Biriyani, Chicken, Shawarma</span>
+      <div class="footer">
+       <div class="rate"><i class="fa-solid fa-star" style="color: #ffffff;"></i><small class="r">5.0</small></div>
+       <i>∙</i>
+       <div class="time"><small class="t">45</small><i style="font-style: normal;"> MINS</i></div>
+       <i>∙</i>
+       <div class="expense">₹<small class="ex">300</small> FOR TWO</div>
+       <hr class="line">
+       <b href=""  class="quick-view">QUICK VIEW</b>
+      </div></a></div>
+    </div>
+    
+    <script src="script.js"></script>
+    <script src="app.js"></script>
+    </body>
+</html
